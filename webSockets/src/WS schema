@@ -1,0 +1,35 @@
+Schemas are created while using ws Clients and Servers
+
+A WS Message Schema defines the structure of messages exchanged between a Client and the Server
+
+..........................
+
+Components of Schema.
+
+1. Type - user message, system message etc.
+2. Content - text, JSON, binary data
+3. Timestamp
+4. user - name, email
+5. id etc
+
+
+............................
+
+Our schema
+1. What user can send 
+
+{
+   "type": "join",
+   "payload": {
+     "roomId": "123"
+   }
+}
+
+2. What server can send
+
+{
+	"type": "chat",
+	"payload": {
+		"message": "hi there"
+	}
+}
